@@ -12,3 +12,7 @@ usage of logic will be posted sooner or later.
 please note:  Samannoyb shall not be responsible for any violation on this usage.
 
  have a good time!
+ 
+ # Usage Of Logic In Your Own Project
+ 
+ `<html>`
