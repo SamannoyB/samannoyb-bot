@@ -17,8 +17,7 @@ please note:  Samannoyb shall not be responsible for any violation on this usage
 
 Please Add This HTML in your project --
 
-`<!DOCTYPE html>
-<html lang="en">
+`<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,16 +32,12 @@ Please Add This HTML in your project --
             <img src="bot.png" alt="">
             <span>SamannoyB Bot</span>
         </div>
-        <div id="comments-section">
-          
+        <div id="comments-section">  
         </div>
         <div class="message-area">
           <input type="text" >
           <i class="fa fa-paper-plane"></i>
-        </div>
-    </div>
-</body>
-</html>`
+        </div></div></body></html>`
 
 And please add this script inside your project -- 
 `const textVal = document.querySelector(".message-area input"),
