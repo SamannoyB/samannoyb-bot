@@ -17,15 +17,7 @@ please note:  Samannoyb shall not be responsible for any violation on this usage
 
 Please Add This HTML in your project --
 
-`<!DOCTYPE html><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="9f6ace1107.js"></script>
-</head>
+`<script src="https://kit.fontawesome.com/9f6ace1107.js"></script></head>
 <body>
     <div class="wrapper">
         <div class="recipient">
