@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f6ace1107.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="recipient">
+            <img src="bot.png" alt="">
+            <span>SamannoyB Bot</span>
+        </div>
+        <div id="comments-section">
+          
+        </div>
+        <div class="message-area">
+          <input type="text" id="textbox">
+          <i class="fa fa-paper-plane" id="send-btn"></i>
+          <i class="fas fa-microphone" id="start-btn" onclick="document.querySelector('#stop-btn').style.display='flex'; document.querySelector('#start-btn').style.display = 'none';"></i>
+          <i class="fas fa-times" id="stop-btn" style="display:none;""></i>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</html>
