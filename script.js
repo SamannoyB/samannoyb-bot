@@ -1,14 +1,18 @@
-  const textVal = document.querySelector(".message-area input"),
+   const textVal = document.querySelector(".message-area input"),
    sendBtn = document.querySelector("#send-btn");
+
+ 
 
    function replyMessage(myMess)
    {
+
+    const words = myMess.split(" ");
        let message = ''
 
        message = `<br><h1 style='float:right;'>${myMess}</h1>`;
        $("#comments-section").append(message);
 
-      const commands = ["hello","hi","how are you","what's my lucky number","thank you","you are very well mannered","what's your age","who created you","what's your gender","sb tell commands","sb sing a song"];
+      const commands = ["hello","hi","how are you","what's my lucky number","thank you","you are very well mannered","what's your age","who created you","what's your gender","sb tell commands","sb sing a song","sb go to"];
       const responses = ["hi! How Can I Help You Today?","I am fine, what about you?","It was fun with you! Have a good time!","thanks for the feedback!","I am a male bot","I am a minute old.","SamannoyB, find him at lichess, discord, and his website -- sbworld.in","hello,hi,how are you,what's my lucky number,thank you,you are very well mannered,what's your age,what's your gender,sb tell commands","SONG BY"];
 
       if(myMess == commands[0] || myMess == commands[1]){
@@ -134,6 +138,28 @@ speechSynthesis.speak(utterance);
 bot = `<br><h1 style="background='#eee'"><audio src='${music}' controls autoplay></audio></h1>`;
 $("#comments-section").append(bot);
       }
+      else if(myMess.includes("sb go to")){
+console.log(`${words[0]}` + `${words[1]}` + `${words[2]}` + `${words[3]}`);
+
+ window.open(`https://${words[3]}`);
+
+let bot = ''
+
+bot = `<br><h1 style='background-color:#123;'>Opening Site ${words[3]}</h1>`;
+$("#comments-section").append(bot);
+}
+else if(myMess.includes("sb search for")){
+console.log(`${words[0]}` + `${words[1]}` + `${words[2]}` + `${words[3]}`);
+
+
+  window.open(`https://google.com/search?q=${words[3]}`);
+
+let bot = ''
+
+bot = `<br><h1 style='background-color:#123;'>Searching For ${words[3]}</h1>`;
+$("#comments-section").append(bot);
+
+}
       else {
         let bot = ''
 
@@ -186,12 +212,16 @@ recognition.onresult = function (event) {
 
          textbox.val(content)
 }
-
 $("#stop-btn").click(function (event) {
   recognition.stop()
+  $("#stop-btn").css("display","none")
+  $("#start-btn").css("display","flex")
 })
 $("#start-btn").click(function (event) {
-    $("#start-btn").text("Done Speaking");
+  let userAgent = navigator.userAgent;
+  
+  
+
     if(content.length) {
         content += ''
     }
